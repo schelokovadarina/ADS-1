@@ -18,7 +18,7 @@ uint64_t nPrime(uint64_t n) {
 uint64_t num = 0;
 uint64_t i = 0;
 while (i != n) {
-chiclo++;
+num++;
 if (checkPrime(num))
 i++;
 }
@@ -32,17 +32,6 @@ while (!(checkPrime(nextnum))) {
 nextnum++;
 }
 return nextnum;
-}
-
-uint64_t sumPrime(uint64_t hbound) {
-uint64_t sum = 0;
-if (hbound > 2) {
-for (int i = 2; i < hbound; i++)
-if (checkPrime(i)) {
-sum = sum + i;
-}
-}
-return sum;
 }
 
 uint64_t sumPrime(uint64_t hbound) {
